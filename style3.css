@@ -1,0 +1,244 @@
+@charset "ISO-8859-1";
+*{
+    margin: 0;padding: 0;
+}
+body{
+  background-color: lightgray;
+}
+.para,h2{
+    text-transform: capitalize;
+}
+.para{
+    padding-bottom: 15px;
+}
+#signin,#signup,#signin2,#signup2{
+    margin-top: 20px;
+    padding: 10px ;
+    border-radius: 4px;
+    background-color:rgb(243, 24, 8) ;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#signup,#signin,#signin2,#signup2{
+    align-self: center;
+}
+#welcome{
+    position: relative;
+    bottom: 46px;
+    padding: px;
+}
+#p2{
+    margin-left: 4px;
+    font-weight: 500;
+    font-size: medium;
+}
+input{
+    padding: 8px 65px 8px 25px;
+    margin: 3px;
+    font-weight: 700;
+    background-color:rgb(199, 199, 199);
+    border: none;
+}
+.container{
+    position: relative;
+     top: 60px;
+    width: 70%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(179, 179, 179);
+    border-radius: 4px;
+}
+.container2{
+    position: relative;
+    top: 60px;
+   width: 70%;
+   height: 90%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid rgb(179, 179, 179);
+   border-radius: 4px;
+   visibility: hidden;
+}
+.container2-change{
+    /* position: relative;
+    top: 60px;
+   width: 70%;
+   height: 90%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid rgb(179, 179, 179);
+   border-radius: 4px; */
+   visibility: inherit;
+}
+.container-change{
+    visibility: hidden;
+}
+.main-container{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   position: relative;
+}
+.main-container2{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* bottom: 500px; */
+}
+.main-container-change{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   position: relative;
+   top:500px;
+}
+.main-container2-change{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  bottom:500px;
+}
+.con1,.con4{
+    position: relative;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 45px;
+    background-color: rgb(243, 24, 8) ;
+    height: 80%;
+    width: 50%;
+}
+.con2,.con3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding: 45px;
+    background-color: #FFFFFF;
+    height: 80%;
+    width: 50%;
+   
+}
+#create{
+    margin-top: 52px;
+  align-self: center;
+  position: relative;
+  bottom: 35px;
+  padding: px;
+}
+.trans1{
+ animation: animate1 0.1s none 0.2s 2;
+}
+@keyframes animate1{
+    from{
+     background-color: rgb(228, 70, 58);
+    }
+    to{
+        transform: translateX(50deg);
+        background-color:#FFFFFF;
+    }
+}
+.trans2{
+    animation: animate2 0.1s none 0.2s 2;
+}
+@keyframes animate2{
+    from{
+        background-color: #FFFFFF;
+    }
+    to{
+        transform: translateX(50deg);
+        background-color: rgb(228, 70, 58);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container, .container2 {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .con1, .con4, .con2, .con3 {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .para {
+        font-size: 0.9rem;
+        padding-bottom: 10px;
+    }
+
+    input {
+        width: 55%;
+        padding: 10px;
+    }
+
+    #signin, #signup, #signin2, #signup2 {
+        width: 30%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container, .container2 {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .main-container, .main-container2 {
+        height: auto;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .para {
+        font-size: 0.8rem;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    input {
+        width: 55%;
+        padding: 8px;
+        margin: 5px auto;
+    }
+
+    #signin, #signup, #signin2, #signup2 {
+        width: 30%;
+        padding: 8px;
+        margin: 10px auto;
+    }
+
+    .con1, .con4, .con2, .con3 {
+        padding: 15px;
+        text-align: center;
+    }
+}
